@@ -1,0 +1,52 @@
+body{
+    background-color: #412567;
+    color: azure;
+    overflow-x: hidden;
+    display: flex;
+    
+}
+/* header */
+.mainbar{
+
+    width: 1600 px;
+    height: 92 px;
+    padding: 30px;
+    
+     
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    position: sticky;
+}
+ 
+
+.logo h2{
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: space-between;
+   
+    
+
+}
+
+.color-primary{
+    color: #c53f3f
+}
+
+.navbar-link{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 30px;
+
+}
+
+/* button radiant */
+.radiant{
+    
+}
