@@ -229,7 +229,7 @@ position: relative;
     padding: 40px;
     border-radius: 20px;
     text-align: left;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     font-size: medium;
     border: 1px solid purple;
@@ -255,6 +255,152 @@ position: relative;
  }
 .card-btm{
     grid-column: span 1;
+ }
+
+/* Container Styling */
+.episodes {
+    background-color: #0f051d; /* Deep Dark Background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color:white;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.episode-card {
+    background: #1A0B2E; /* Card background color */
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid ;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+}
+
+/* YouTube Responsive Container */
+.video-container {
+    position: relative;
+    padding-bottom: 50%; 
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Content inside Card */
+.episode-info {
+    padding: 20px;
+}
+
+.episode-info h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.episode-info p {
+    color: #bbb;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+}
+
+.duration {
+    color: #00ffcc; 
+    font-weight: bold;
+    font-size: 0.85rem;
+    /* background-color: #ffffff; */
+}
+/* host box */
+.host-title{
+    background-color: #533C72 100%;
+    color: #ffffff;
+    padding-top: 50px;
+    text-align: center;
+}
+.host-box{
+    background-color: #533C72 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.image{
+    position: relative;
+}
+.host-info h3{
+     margin-top: 0px;
+     flex-wrap: wrap;
+}
+.host-info p{
+     margin-top: 10px;
+     flex-wrap: wrap;
+     /* margin-left: 2px; */
+     align-items: last baseline;
+     text-align: left;
+     
+      
+}
+ .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: purple;
+    border-radius: 50%;
+    margin-top: 15px;
+    gap:15px;
+    background-color: #533C72 100%;
+}
+
+
+
+
+
+
+
+
+
+ /* mobile responsive */
+ @media (max-width:576px){
+   .why-choose-tcwv{
+    grid-template-columns: 1fr;
+   } 
+   .card, .card-wide, .card-tall, .card-btm{
+    grid-row: auto;
+    grid-column: auto;
+    flex-direction: column;
+   }
+ 
+
  }
 
 
